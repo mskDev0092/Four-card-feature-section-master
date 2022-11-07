@@ -1,0 +1,182 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Primary */
+
+  --Red: hsl(0, 78%, 62%);
+  --Cyan: hsl(180, 62%, 55%);
+  --Orange: hsl(34, 97%, 64%);
+  --Blue: hsl(212, 86%, 64%);
+
+  /* Neutral */
+
+  --VeryDarkBlue: hsl(234, 12%, 34%);
+  --VeryLightGray: hsl(0, 0%, 98%);
+  --GrayishBlue: hsl(229, 6%, 66%);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  background-color: var(--VeryLightGray);
+  color: var(--GrayishBlue);
+  
+  
+}
+
+.wrapAll {
+  width: auto;
+  padding: 50px 30px;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  color: var(--VeryDarkBlue);
+  font-size: 38px;
+  font-weight: 200;
+}
+
+header h2 {
+  color: var(--VeryDarkBlue);
+  font-size: 38px;
+  font-weight: 600;
+}
+
+header p {
+  max-width: 600px;
+  margin: 0 auto;
+  margin-top: 20px;
+  font-size: medium;
+}
+
+.card img {
+  position: absolute;
+  padding: 25px;
+  right: 0;
+  bottom: 0;
+  width: auto;
+  height: auto;
+  
+}
+
+.cards-section {
+    display: flex;
+    margin-top: 60px;
+    gap: 25px;
+    align-items: center;
+    
+}
+
+.card-text {
+    text-align: left;
+    padding-bottom: 50px;
+    margin: 10px;
+    
+}
+
+.card-text h3 {
+    font-size: medium;
+    margin-bottom: 10px;
+    color: var(--VeryDarkBlue);
+}
+
+.card-text p{
+  font-size: small;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 30px;
+    text-align: right;
+    position: relative;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+  
+  }
+
+.cards-section .box1{
+   border-top: var(--Cyan) 4px solid;
+   
+}
+
+.cards-section .box2{
+    border-top: var(--Red) 4px solid;
+    
+}
+
+.cards-section .box3{
+    border-top: var(--Orange) 4px solid;
+    
+  }
+
+.cards-section .box4{
+    border-top: var(--Blue) 4px solid;
+   
+}
+
+.box2-flex-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.box1{
+    align-self: center;
+}
+
+.box4{
+    align-self: center;
+}
+
+@media (width < 600px) {
+  .cards-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+  }
+  
+  .card{
+    margin: 18px;
+  }
+  
+  header h1{
+    font-size: 28px;
+
+  }
+
+header h2{
+  font-size: 28px;
+}
+
+header p{
+  font-size: 16px;
+  padding: 20px;
+}
+ 
+.card-text h3{
+  font-size: 18px;
+}
+
+.card-text p {
+  font-size: 12px;
+}
+}
