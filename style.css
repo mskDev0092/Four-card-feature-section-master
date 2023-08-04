@@ -1,13 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
 
-.attribution {
-  font-size: 11px;
-  text-align: center;
-}
-.attribution a {
-  color: hsl(228, 45%, 44%);
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -34,14 +26,12 @@ body {
   font-size: 15px;
   background-color: var(--VeryLightGray);
   color: var(--GrayishBlue);
-  
-  
-}
-
-.wrapAll {
   width: auto;
-  padding: 50px 30px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
 }
 
 header {
@@ -67,116 +57,113 @@ header p {
   font-size: medium;
 }
 
+main {
+  position: relative;
+}
+
+.cards-section {
+  display: flex;
+  margin-top: 60px;
+
+  gap: 25px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 7px;
+  width: 350px;
+  height: 230px;
+  margin: 10px;
+  padding: 20px;
+  text-align: right;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-text {
+  text-align: left;
+  padding-bottom: 50px;
+  margin: 10px;
+}
+
+.card-text h3 {
+  font-size: medium;
+  margin-bottom: 10px;
+  color: var(--VeryDarkBlue);
+}
+
+.card-text p {
+  font-size: small;
+}
+
 .card img {
   position: absolute;
   padding: 25px;
+  margin: 5px;
   right: 0;
   bottom: 0;
   width: auto;
   height: auto;
-  
 }
 
-.cards-section {
-    display: flex;
-    margin-top: 60px;
-    gap: 25px;
-    align-items: center;
-    
+.cards-section .box1 {
+  border-top: var(--Cyan) 4px solid;
 }
 
-.card-text {
-    text-align: left;
-    padding-bottom: 50px;
-    margin: 10px;
-    
+.cards-section .box2 {
+  border-top: var(--Red) 4px solid;
 }
 
-.card-text h3 {
-    font-size: medium;
-    margin-bottom: 10px;
-    color: var(--VeryDarkBlue);
+.cards-section .box3 {
+  border-top: var(--Orange) 4px solid;
 }
 
-.card-text p{
-  font-size: small;
-}
-
-.card {
-    background-color: #fff;
-    border-radius: 7px;
-    padding: 30px;
-    text-align: right;
-    position: relative;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05), 0 6px 6px rgba(0, 0, 0, 0.1);
-  
-  }
-
-.cards-section .box1{
-   border-top: var(--Cyan) 4px solid;
-   
-}
-
-.cards-section .box2{
-    border-top: var(--Red) 4px solid;
-    
-}
-
-.cards-section .box3{
-    border-top: var(--Orange) 4px solid;
-    
-  }
-
-.cards-section .box4{
-    border-top: var(--Blue) 4px solid;
-   
+.cards-section .box4 {
+  border-top: var(--Blue) 4px solid;
 }
 
 .box2-flex-container {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
-.box1{
-    align-self: center;
+.box1 {
+  align-self: center;
 }
 
-.box4{
-    align-self: center;
+.box4 {
+  align-self: center;
 }
 
-@media (width < 600px) {
+@media (width <= 800px) {
   .cards-section {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    
   }
-  
-  .card{
-    margin: 18px;
+  header {
+    margin-top: 50px;
   }
-  
-  header h1{
+  header h1 {
     font-size: 28px;
-
+    word-wrap: normal;
   }
 
-header h2{
-  font-size: 28px;
-}
+  header h2 {
+    font-size: 28px;
+  }
 
-header p{
-  font-size: 16px;
-  padding: 20px;
-}
- 
-.card-text h3{
-  font-size: 18px;
-}
+  header p {
+    font-size: 16px;
+    padding: 20px;
+  }
 
-.card-text p {
-  font-size: 12px;
-}
+  .card-text h3 {
+    font-size: 18px;
+  }
+
+  .card-text p {
+    font-size: 12px;
+  }
 }
