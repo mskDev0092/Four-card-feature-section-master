@@ -2,7 +2,7 @@
 This is a solution to the Four card feature section master challenge on Frontend Mentor. Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 # Screenshot Laptop HiDPI Screen
-![image](https://github.com/mskDev0092/four-card-feature-section-master/blob/main/Frontend%20Mentor%20Four%20card%20feature%20section.png)
+![image](https://github.com/mskDev0092/Four-card-feature-section-master/blob/main/Screenshot%202023-08-04%20at%2022-33-01%20Frontend%20Mentor%20Four%20card%20feature%20section.png)
 
 - ## **Table of contents**
 
